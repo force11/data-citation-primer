@@ -10,8 +10,8 @@ title: "Data Citations: A Primer"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   This is a primer on data citation basics, written as part of the Force11 Data Citation Implementation Pilot.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://force11.github.io/data-citation-primer/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. //data-citation-primer
+url: "http://force11.github.io/	" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
