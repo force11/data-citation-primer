@@ -4,11 +4,11 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">What does a data citation look like?</h1>
+  <h1 class="page-heading">What Does a Data Citation Look Like?</h1>
 
 <p>Data citations look like other citations, but they reference data sets, not papers. But it's perfectly fine to reference both a data set and the paper it came from, if appropriate. Here is how data might me cited in a (made-up) study</p>
 <div style="background: #d7dbdd">
-<h3>A (fake) study on lower back pain</h2>
+<h2>A (fake) study on lower back pain</h2>
 <p style="font-family: serif">To study the neural processing of lower back pain, we analyzed an fMRI data set from individuals exhibiting chronic lower back pain (Vrana et al., 2015a) from the study by Vrana et al. (2015b).  And, just to put in a second example from a different repository, we utilized the replication dataset from Cranmer et al., (2016a) to test our network analysis.</p>
 
 <h3>References</h3>
@@ -17,11 +17,43 @@ layout: default
 <p style="font-family: serif">Vrana A, Hotz-Boendermaker S, Stämpfli P, Hänggi J, Seifritz E, Humphreys BK, Meier ML (2015b) Differential neural processing during motor imagery of daily activities in chronic low back pain patients. PLOS ONE 10(11): e0142391. <a href="http://doi.org/10.1371/journal.pone.0142391">http://doi.org/10.1371/journal.pone.0142391</a></p></div>
 
 </div>
-
+<div>
 <h2>Anatomy of a Data Citation</h2>
-<p>Let's take a closer look at a data citation:
+<p>Let's take a closer look at a data citation. It looks a lot like a citation to a journal articles with typical elements like authors, date, and title. It also has some features like version number, and, in the example below, a numeric fingerprint that are specific to data citations. Finally, a good data citation should always include a unique, persistent identifier. Most commonly, as in our example, this will be a digital object identifier (DOI), but there are other options, particularly for data in the sciences with a long tradition of repositories. In 2014, Force11 coordinated and published a set of 8 principles for data citation. In the illustration below, we associate these principles with elements of a data citation.</p>
 <img src="{{ site.github.url }}/images/anatomy-data-citation.png" alt="Anatomy of a Data Citation" style="width:1153px">
+</div>
+<div>
 <h2>A Data Citation Workflow</h2>
+<p>Data citations and the landing pages of data repository interact to facilitate access to data. A data citation, following the principles outlined above, will lead you straight to a dataset's landing page, from where you can access the data. The repository landing page, in turn, provides you with all the information&mdash;metadata&mdash;that you need to create a citation, both in human-readable and in machine-readable form, so that software like reference managers can access it.</p>
 <img src="{{ site.github.url }}/images/data-workflow.png" alt="Data Citation Workflow" style="width:1142px">
+</div>
+<div>
+<h2>Repository Landing Page Examples</h2>
+<p>This table describes the landing page for two datasets in two repositories, Harvard Dataverse and Dryad. Both landing pages are also annotated via the <a href="http://hypothes.is">hypothes.is</a> annotation client and we link to the relevant annotated section of the page from the table.
 
+ <style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>Element</th><th>Vrana et al. 2015&mdash;Dryad</th><th>Dryad Tag</th><th>Cranmer et al. 2016&mdash;Dataverse</th><th>Dataverse Tag</th></tr></thead><tbody>
+ <tr><td>Title (?)</td><td><a href="https://via.hypothes.is/http://datadryad.org/resource/doi:10.5061/dryad.2h0q3">Raw fMRI data of controls and patients</a></td><td>Title</td><td>Replication Data for: Navigating the Range of Statistical Tools for Inferential Network Analysis</td><td>Title</td></tr>
+ <tr><td>Description (?)</td><td><a href="https://hyp.is/AVSbR6ptFtPwhMO7Dk0V/datadryad.org/resource/doi:10.5061/dryad.2h0q3">Raw fMRI data of 14 healthy controls (HC) and 15 chronic low back pain patients (CLBP). Subject had to perform a motor imagery (MI) task during scanning session.</a></td><td>Description</td><td>The last decade has seen substantial advances in statistical techniques for the analysis of network data, and a major increase in the frequency with which these tools are used...</td><td>Description</td></tr>
+ <tr><td>Dataset identifier</td><td><a href="https://hyp.is/AVSbSyHKFtPwhMO7Dk04/datadryad.org/resource/doi:10.5061/dryad.2h0q3">http://dx.doi.org/10.5061/dryad.2h0q3</a<</td><td>DOI</td><td>doi:10.7910/DVN/2XP8YF</td><td>Dataset Persistent ID</td></tr>
+ <tr><td>Creator (?)</td><td><a href="https://hyp.is/AVSbURUKFtPwhMO7Dk1b/datadryad.org/resource/doi:10.5061/dryad.2h0q3?show=full">Vrana, Andrea</a></td><td>dc.contributor.author</td><td>"Cranmer, Skyler (The Ohio State University)<br>Leifeld, Philip (University of Glasgow) <br>McClurg, Scott (Southern Illinois University) <br>Rolfe, Meredith (UMass Amherst) "</td><td>Author</td></tr>
+</tbody></table>
 
+</div>
